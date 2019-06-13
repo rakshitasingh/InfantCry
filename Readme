@@ -2,7 +2,7 @@
 #before running the app download the dataset from the google drive link
 https://drive.google.com/open?id=16PUohN7VpgzCoZGU-xMkOGeLz9wInI1I
 
-#So there will the initial dataset and the dataset after cleaning and that will be distributed accofrfding to the labels to help
+#So there will the initial dataset and the dataset after cleaning and that will be distributed according to the labels to help
 in the training of the audios and classifying in the respective labels
 
 #The csv train_mean_and_sd_of_coff.csv and test_mean_and_sd_of_coff.csv are the values for the training and testing audios after sampling 
@@ -19,6 +19,9 @@ install.packages(c("audio", "phonTools", "seewave", "tuneR", "wrassp"))
 #give the path where the necessary csv files will be formed according to you so as to see the numerical values for the audios
 #For svm implementation all the 4 kernels for radial linear polynomial and sigmoid are loaded into an .rda file and hence implemennted
 together in app.R where all the 4 classifier are loaded for prediction 
+The plots shown in the shiny framework will depict accuracy and plots for labels for different classifiers
 
 #you can watch the running of the following project on youtube to see the test results and ui
 https://youtu.be/ntk8PhOMNnw
+
+#the DESCRIPTION docx will help in better understanding of the methodological framework through a flowchart and in a descriptive format for your better understanding
