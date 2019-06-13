@@ -1,6 +1,6 @@
 #install.packages("stringr")
 library(stringr)
-wavPath ="C:\\Users\\sarthhak sharma\\Desktop\\donateacry-corpus-master\\donateacry-corpus-master\\donateacry-android-upload-bucket WAV"
+wavPath ="C:\\Users\\rakshita singh\\Desktop\\donateacry-corpus-master\\donateacry-corpus-master\\donateacry-android-upload-bucket WAV"
 wavFiles = list.files(wavPath, pattern=glob2rx('*.wav'), full.names=TRUE)
 
 vec <- NULL
@@ -41,7 +41,7 @@ for(i in 1:712)
   
 } 
 labe <- data.frame(vec)
-write.table(labe, file = paste("C:\\Users\\sarthhak sharma\\Desktop\\EXCEL SHEET major\\labels.csv"),
+write.table(labe, file = paste("C:\\Users\\rakshita singh\\Desktop\\EXCEL SHEET major\\labels.csv"),
             row.names = FALSE,  na="",col.names=TRUE, sep=",")
 
 

@@ -25,13 +25,13 @@ labb$vec = as.numeric(factor(labb$vec,
                              labels = c(1, 2, 3,4,5,6,7,8,9)))
 
 
-trainl <- read.csv("C:\Users\sarthhak sharma\Desktop\EXCEL SHEET major\training dataset\training labels.csv")
+trainl <- read.csv("C:\Users\rakshita singh\Desktop\EXCEL SHEET major\training dataset\training labels.csv")
 
 train_y <- data.matrix( trainl)
 
 
 
-testl <- read.csv("C:\Users\sarthhak sharma\Desktop\EXCEL SHEET major\testing dataset\testing labels.csv")
+testl <- read.csv("C:\Users\rakshita singh\Desktop\EXCEL SHEET major\testing dataset\testing labels.csv")
 #152  currently 560th obs included 2 times
 test_y <- testl
 

@@ -7,7 +7,7 @@ dfr <- data.frame()
 dfr2 <- data.frame()
 for(i in 1:433)
 {
- df2 <- read.csv(paste("C:\Users\RakshitaSingh\Desktop\EXCEL SHEET major\mfcc_train\mfcc_train" , as.numeric(i) , ".csv",sep=''))
+ df2 <- read.csv(paste("C:\Users\rakshita singh\Desktop\EXCEL SHEET major\mfcc_train\mfcc_train" , as.numeric(i) , ".csv",sep=''))
  
 num_row <- nrow(df2)
 
@@ -26,12 +26,12 @@ if(num_row < 800)
  temp <- as.data.frame(do.call("cbind", lis), stringsAsFactors = FALSE)
  dfr <- rbind(dfr,temp)
 }
-write.table(dfr, file = paste("C:\Users\Rakshita Singh\Desktop\EXCEL SHEET major\training dataset\training_final.csv"),
+write.table(dfr, file = paste("C:\Users\rakshita singh\Desktop\EXCEL SHEET major\training dataset\training_final.csv"),
             row.names = FALSE,  na="",col.names=TRUE, sep=",")
 
 for(i in 1:84)
 {
-  df3 <- read.csv(paste("C:\Users\Rakshita Singh\Desktop\EXCEL SHEET major\mfcc_test\mfcc_test" , as.numeric(i) , ".csv",sep=''))
+  df3 <- read.csv(paste("C:\Users\rakshita singh\Desktop\EXCEL SHEET major\mfcc_test\mfcc_test" , as.numeric(i) , ".csv",sep=''))
   
   num_row <- nrow(df3)
   
@@ -51,5 +51,5 @@ for(i in 1:84)
   dfr2 <- rbind(dfr2,temp)
 }
 
-write.table(dfr2, file = paste("C:\Users\Rakshita Singh\Desktop\EXCEL SHEET major\testing dataset\testing_final.csv"),
+write.table(dfr2, file = paste("C:\Users\rakshita singh\Desktop\EXCEL SHEET major\testing dataset\testing_final.csv"),
             row.names = FALSE,  na="",col.names=TRUE, sep=",")
