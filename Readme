@@ -1,0 +1,24 @@
+# InfantCry
+#before running the app download the dataset from the google drive link
+https://drive.google.com/open?id=16PUohN7VpgzCoZGU-xMkOGeLz9wInI1I
+
+#So there will the initial dataset and the dataset after cleaning and that will be distributed accofrfding to the labels to help
+in the training of the audios and classifying in the respective labels
+
+#The csv train_mean_and_sd_of_coff.csv and test_mean_and_sd_of_coff.csv are the values for the training and testing audios after sampling 
+across the time windows and they contain the mean and standard deviation which will be helpful in classification when the formula will be applied
+#Thus the cnn implementation is done in the steps in the R studio files by first dividing the labels in training and testing datsets and then 
+extracting mfcc over standardised time windows and applying the cnn algorithm on the same
+
+devtools::install_github("nstrayer/shinysense")
+library(shiny)
+library(shinysense)
+install.packages(c("audio", "phonTools", "seewave", "tuneR", "wrassp"))
+
+#do this before build and run the code in the shiny folder- app.R
+#give the path where the necessary csv files will be formed according to you so as to see the numerical values for the audios
+#For svm implementation all the 4 kernels for radial linear polynomial and sigmoid are loaded into an .rda file and hence implemennted
+together in app.R where all the 4 classifier are loaded for prediction 
+
+#you can watch the running of the following project on youtube to see the test results and ui
+https://youtu.be/ntk8PhOMNnw
